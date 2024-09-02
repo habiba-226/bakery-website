@@ -1,0 +1,269 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+:root {
+  --clr-gold: #97645a;
+  --clr-primary: #e2cac6;
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+
+.contact-social-section{
+  display: grid;
+  grid-template-areas: "social contact";
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+/* contact */
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  grid-area: contact;
+}
+.contact-section p {
+  color: var(--clr-gold);
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.contact-section input,
+.message{
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding-bottom: 0.5rem;
+  outline: none;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.message{
+  height: 6rem;
+}
+
+.contact-section button {
+  color: white;
+  background-color: var(--clr-primary);
+  border: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 25px;
+  transition: 0.15s;
+  font-size: 1.5rem;
+}
+.contact-section button:hover {
+  background-color: var(--clr-grey-10);
+  color: var(--clr-gold);
+}
+
+/* social */
+.social-section{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #e1bcb5;
+  height: 30rem;
+  border-radius: 2rem;
+  border-style: groove;
+  grid-area: social;
+  margin-top: 2.4rem;
+}
+
+.social-section:hover {
+  transform: scale(1.02);
+}
+
+.social-contact:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.social-contact {
+  outline: none;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  color: var(--clr-grey-1);
+}
+
+.social-contact img{
+  height: 1rem;
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+.social-line {
+  border: 0.1px solid black;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: #ca9c93;
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  color: var(--clr-grey-10);
+}
+
+
+/* responsive */
+@media (max-width:1000px) {
+  .contact-social-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-section,
+  .social-section {
+    padding: 2rem;
+  }
+
+  .social-section {
+    height: auto;
+    border-radius: 5%;
+  }
+
+  .contact-section p {
+    font-size: 0.875rem;
+  }
+
+  .contact-section input,
+  .message {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .contact-section button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .social-contact {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-contact img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 0.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+    padding: 0 1rem;
+  }
+
+  .top-link {
+    font-size: 1rem;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-social-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-section,
+  .social-section {
+    padding: 2rem;
+  }
+
+  .social-section {
+    height: auto;
+    border-radius: 5%;
+  }
+  .contact-section p {
+    font-size: 0.875rem;
+  }
+
+  .contact-section input,
+  .message {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .contact-section button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .social-contact {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-contact img {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 0.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+    padding: 0 1rem;
+  }
+  .top-link {
+    font-size: 1rem;
+    right: 10px;
+    bottom: 10px;
+  }
+}

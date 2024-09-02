@@ -1,0 +1,259 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+*/
+:root {
+  --clr-gold: #97645a;
+  --clr-primary: #e2cac6;
+  --clr-primary-5: rgb(47, 83, 130);
+  --clr-primary-10: #e7dada;;
+  --clr-grey-5: hsl(317, 22%, 87%);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* section */
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/*
+=============== 
+Reviews
+===============
+*/
+/*  global classes */
+
+/* section */
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+/*
+=============== 
+Reviews
+===============
+*/
+
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: #e3b6ad;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:0 ;
+}
+
+.container1, .container2, .container3{
+  width: 80vw;
+  max-width: var(--fixed-width);
+  margin: 0;
+  width: 100%; 
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 1rem; 
+  width: 100%;
+}
+
+
+.review {
+  background: var(--clr-white);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.review:hover {
+  box-shadow: var(--dark-shadow);
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: var(--clr-primary-10);
+  color: var(--clr-white);
+}
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-10);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+.author {
+  margin-bottom: 0;
+}
+.job {
+  text-transform: uppercase;
+  color: var(--clr-gold);
+  font-size: 0.85rem;
+}
+.info {
+  color: var(--clr-primary-5);
+  max-width: 25rem;
+}
+
+.prev-btn,
+.next-btn {
+  color: var(--clr-primary);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--clr-gold);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: var(--clr-primary-10);
+  color: var(--clr-);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  border-color: var(--clr-gold);
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: var(--clr-primary);
+  color: rgb(49, 49, 49);
+}
+
+@media screen and (max-width: 1000px){
+  .reviews{
+    height:160vh;
+  }
+}
+
+
