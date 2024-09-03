@@ -133,7 +133,6 @@ Reviews
 }
 
 .container1, .container2, .container3{
-  width: 80vw;
   max-width: var(--fixed-width);
   margin: 0;
   width: 100%; 
@@ -253,6 +252,13 @@ Reviews
 @media screen and (max-width: 1000px){
   .reviews{
     height:160vh;
+  }
+  .review{
+    height: 95vh;
+    position: relative;
+  }
+  .info{   
+    font-size: 10px;
   }
 }
 
