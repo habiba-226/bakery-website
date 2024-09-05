@@ -6,7 +6,6 @@
 
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -28,6 +27,11 @@ body {
   gap: 2rem;
   margin: 2rem;
 }
+
+#contact{
+  background: radial-gradient(circle at 3.9% 11.3%, rgb(237, 120, 153) 0%, rgb(238, 216, 190) 71.6%, rgb(249, 238, 221) 99.8%);
+}
+
 
 /* contact */
 .contact-section{

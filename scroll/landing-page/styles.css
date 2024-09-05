@@ -332,7 +332,7 @@ header {
   color: var(--clr-primary-6);
 }
 .title span {
-  color: var(--clr-secondary);
+  color: #a37688;
 }
 #about,
 #contact,
@@ -349,10 +349,6 @@ header {
   z-index: 1; /* Lower z-index compared to navbar */
 }
 
-
-#about,#contact {
-  background: var(--clr-white);
-}
 footer {
   background: var(--clr-grey-1);
   padding: 5rem;

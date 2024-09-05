@@ -41,7 +41,6 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -109,8 +108,15 @@ p {
 }
 /*  global classes */
 
+#about{
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(18% 28% at 24% 50%, #EBB1CDFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #EBC18CE3 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #DCCAA0E3 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #EF8BB3AB 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #EEA7C2FF 12%, #073AFF00 100%),linear-gradient(125deg, #E8CDA6E3 27%, #eea7c2 83%);
+}
+
+
+
 .aboutsection{
-  background-color: var(--clr-grey-5) !important;
   height: 45rem !important;
 }
 .section {
