@@ -155,8 +155,7 @@ Reviews
 }
 
 #reviews{
-  background: rgb(237,128,156);
-  background: linear-gradient(90deg, rgba(237,128,156,1) 0%, rgba(243,225,203,1) 100%);
+  background: #FCE3E7;
 }
 
 .review {

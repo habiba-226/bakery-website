@@ -29,7 +29,8 @@ body {
 }
 
 #contact{
-  background: radial-gradient(circle at 3.9% 11.3%, rgb(237, 120, 153) 0%, rgb(238, 216, 190) 71.6%, rgb(249, 238, 221) 99.8%);
+  background: url('/scroll/contact/contact-bg.jpg')  center/cover no-repeat;
+  
 }
 
 
